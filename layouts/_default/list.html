@@ -1,4 +1,10 @@
 {{ define "main" }}
-{{/* todo: paginate list content */}}
-{{ .Content }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <section>
+      <h2>{{ .LinkTitle }}</h2>
+      {{ .Content }}
+    </section>
+  {{ end }}
 {{ end }}

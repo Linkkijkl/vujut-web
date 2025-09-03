@@ -55,13 +55,13 @@ time, mark, audio, video {
 /* Footer placement, DO NOT ALTER */
 @media all {
     html, body, #all {
-        min-height: 100vh;
+        min-height: 100vh !important;
     }
     #all {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
     }
     footer {
-        margin-top: auto;
+        margin-top: auto !important;
     }
 }

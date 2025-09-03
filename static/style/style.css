@@ -66,6 +66,18 @@ time, mark, audio, video {
     }
 }
 
+/* Footer layout */
+@media all {
+    footer {
+        border-top: 1px solid black;
+        display: block flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        height: 3rem;
+    }
+}
+
 /* Font settings */
 @media all {
     html {

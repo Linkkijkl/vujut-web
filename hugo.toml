@@ -4,7 +4,4 @@ title = 'Linkki Jyväskylä ry Vuosijuhlat 2025'
 
 staticDir = ["static"]
 
-[taxonomies]
-    category = "categories"
-    tag = "tags"
-    author = "authors"
+disableKinds = ["taxonomy"]

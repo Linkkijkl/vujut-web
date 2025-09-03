@@ -1,1 +1,5 @@
++++
+title = "Linkki Jyväskylä ry 20v vuosijuhlat"
++++
+
 Tietotekniikan ja koulutusteknologian opiskelijoiden ainejärjestö Linkki Jyväskylä ry juhlii 20-vuotisvuosijuhlaansa <PÄIVÄMÄÄRÄ>. Juhla koostuu kolmesta osasta: kutsuvieraiden cocktail-tilaisuudesta, iltajuhlasta sekä seuraavan päivän silliaamiaisesta. 

@@ -3,7 +3,7 @@
   {{ .Content }}
   {{ range .Pages }}
     <section>
-      <h2>{{ .LinkTitle }}</h2>
+      <h2 id="{{ replace .LinkTitle " " "-" | strings.ToLower }}">{{ .Title }}</h2>
       {{ .Content }}
     </section>
   {{ end }}

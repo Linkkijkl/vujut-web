@@ -1,0 +1,5 @@
+<div id="nav">
+  {{ range site.RegularPages }}
+    <a href="#{{ replace .LinkTitle " " "-" | strings.ToLower }}">{{ .LinkTitle }}</a>
+  {{ end }}
+</div>

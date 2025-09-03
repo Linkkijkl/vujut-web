@@ -1,0 +1,37 @@
+name: Deploy to host
+on:
+  push:
+    paths-ignore:
+      - README.md
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploy to host
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.139.4'
+          extended: true
+      - name: Build
+        run: | 
+          hugo
+      - name: Deploy
+        uses: up9cloud/action-rsync@master
+        env:
+          SOURCE: ./public/
+          ARGS_MORE: --checksum
+          VERBOSE: true
+
+          HOST: ${{ secrets.DEPLOY_SSH_HOST }}
+          PORT: ${{ secrets.DEPLOY_SSH_PORT }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          KEY: ${{ secrets.SSH_KEY }}
+          TARGET: ${{ secrets.DEPLOY_TARGET }}

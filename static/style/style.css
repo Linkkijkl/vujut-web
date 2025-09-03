@@ -65,3 +65,19 @@ time, mark, audio, video {
         margin-top: auto !important;
     }
 }
+
+/* Font settings */
+@media all {
+    html {
+        font-family: "Libre Baskerville";
+        font-weight: 400;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    i {
+        font-style: italic;
+    }
+}

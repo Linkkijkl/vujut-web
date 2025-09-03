@@ -24,7 +24,35 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* Footer placement */
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url(typefaces/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url(typefaces/LibreBaskerville-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url(typefaces/LibreBaskerville-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(typefaces/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(typefaces/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+/* Footer placement, DO NOT ALTER */
 @media all {
     html, body, #all {
         min-height: 100vh;

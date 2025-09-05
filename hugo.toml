@@ -1,6 +1,7 @@
 baseURL = 'https://dev-vujut.linkkijkl.fi'
 languageCode = 'fi-fi'
 title = 'Linkki Jyväskylä ry Vuosijuhlat 2025'
+defaultContentLanguage = 'fi'
 
 staticDir = ["static"]
 

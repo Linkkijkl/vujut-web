@@ -1,0 +1,14 @@
+{{ if isset site.Data "sponsors" }}
+{{ if gt (len site.Data.sponsors) 0 }}
+<section class="sponsors">
+  <h2>{{ i18n "sponsors" | title }}</h2>
+  {{ range sort site.Data.sponsors "name" "asc" }}
+    <div class="sponsor">
+      <a href="{{ .url }}" target="_blank">
+        <img src="{{ .image }}" alt="{{ .name }}" class="sponsor-image" />
+      </a>
+    </div>
+  {{ end }}
+</section>
+{{ end }}
+{{ end }}

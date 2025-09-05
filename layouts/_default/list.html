@@ -1,6 +1,8 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <section>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </section>
   {{ range .Pages }}
     <section>
       <h2 id="{{ replace .LinkTitle " " "-" | strings.ToLower }}">{{ .Title }}</h2>

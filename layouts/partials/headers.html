@@ -16,7 +16,7 @@
 
 {{ hugo.Generator }}
 
-<!-- Theme stylesheet, if possible do not edit this stylesheet -->
+<!-- Stylesheet -->
 <link href="{{ "style/style.css" | relURL }}" rel="stylesheet">
 
 <!-- Favicon and Apple touch icons-->
@@ -66,3 +66,7 @@
 {{ end }}
 <meta name="twitter:description" content="{{ $description_plain | truncate 200 }}">
 {{ with .Param "twitter_author" }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
+
+<!-- Masonry -->
+{{ $masonry := resources.Get "node/masonry.pkgd.min.js" }}
+<script src="{{ $masonry.Permalink }}"></script>

@@ -6,3 +6,6 @@ resources/
 # Yarn ( npm )
 yarn.lock
 node_modules/
+
+# Directory used to link files from node_modules
+assets/node/

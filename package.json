@@ -5,5 +5,11 @@
   "repository": "git@github.com:Linkkijkl/vujut-web",
   "author": "Linkki Jyväskylä ry",
   "license": "UNLICENSED",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "masonry-layout": "^4.2.2"
+  },
+  "scripts": {
+    "postinstall": "mkdir -p assets/node && link node_modules/masonry-layout/dist/masonry.pkgd.min.js assets/node/masonry.pkgd.min.js"
+  }
 }

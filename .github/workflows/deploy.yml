@@ -15,7 +15,13 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v4
-      - name: Setup Hugo
+        with:
+          lfs: true
+      - name: Pull node modules
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+      - name: Build Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.139.4'

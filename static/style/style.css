@@ -93,3 +93,20 @@ time, mark, audio, video {
         font-style: italic;
     }
 }
+
+/* Sponsors */
+@media all {
+    .sponsors .masonry {
+        padding: 2%;
+
+        .grid-sizer, .sponsor {
+            width: 30%;
+        }
+        .gutter-sizer {
+            width: 3%;
+        }
+        .sponsor-image {
+            width: 100%;
+        }
+    }
+}

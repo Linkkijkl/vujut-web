@@ -6,3 +6,6 @@ defaultContentLanguage = 'fi'
 staticDir = ["static"]
 
 disableKinds = ["taxonomy"]
+
+[params]
+title = "Linkki Jyväskylä ry 20v vuosijuhlat"

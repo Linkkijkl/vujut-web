@@ -1,6 +1,7 @@
 +++
 title = 'Etiketti'
 weight = 10
+id = 'etiketti'
 +++
 
 Pu­ku­koo­di vuo­si­juh­las­sa on frakki/tum­ma pu­ku tai täyspitkä juhla-/iltapuku sekä a­ka­tee­mi­set kun­ni­a­mer­kit.

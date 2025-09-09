@@ -2,5 +2,9 @@
 {{ $masonry := resources.Get "node/masonry.pkgd.min.js" }}
 <script src="{{ $masonry.Permalink }}"></script>
 
+<!-- Bootstrap -->
+{{ $bootstrap := resources.Get "node/bootstrap.bundle.min.js" }}
+<script src="{{ $bootstrap.Permalink }}"></script>
+
 <!-- Scripts -->
 <script src="{{ "js/main.js" | relURL }}"></script>

@@ -1,2 +1,6 @@
+<!-- Masonry -->
+{{ $masonry := resources.Get "node/masonry.pkgd.min.js" }}
+<script src="{{ $masonry.Permalink }}"></script>
+
 <!-- Scripts -->
 <script src="{{ "js/main.js" | relURL }}"></script>

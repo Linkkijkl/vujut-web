@@ -7,9 +7,10 @@
   "license": "UNLICENSED",
   "private": false,
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "masonry-layout": "^4.2.2"
   },
   "scripts": {
-    "postinstall": "rm -Rf assets/node && mkdir -p assets/node && link node_modules/masonry-layout/dist/masonry.pkgd.min.js assets/node/masonry.pkgd.min.js"
+    "postinstall": "./link-node-dependencies.sh"
   }
 }

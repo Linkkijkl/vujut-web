@@ -16,6 +16,10 @@
 
 {{ hugo.Generator }}
 
+<!-- Bootstrap -->
+{{ $bootstrap := resources.Get "node/bootstrap.min.css" }}
+<link href="{{ $bootstrap.Permalink }}" rel="stylesheet">
+
 <!-- Stylesheet -->
 <link href="{{ "style/style.css" | relURL }}" rel="stylesheet">
 
@@ -66,7 +70,3 @@
 {{ end }}
 <meta name="twitter:description" content="{{ $description_plain | truncate 200 }}">
 {{ with .Param "twitter_author" }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
-
-<!-- Masonry -->
-{{ $masonry := resources.Get "node/masonry.pkgd.min.js" }}
-<script src="{{ $masonry.Permalink }}"></script>

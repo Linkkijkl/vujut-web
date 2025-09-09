@@ -9,21 +9,24 @@
 
     <div id="all">
 
-        {{/*
-        {{ partial "top.html" . }}
-        */}}
+      {{ partial "nav.html" }}
 
-        {{ partial "nav.html" }}
+      {{/* {{ partial "top.html" */}}
 
-        {{ block "main" . }}
+      <div class="container-xl text-center">
+
+          {{ block "main" . }}
             This will be replaced with content from the 
             corresponding "define" action found in the template
             to which this base template is applied.
-        {{ end }}
+          {{ end }}
 
-        {{ partial "sponsors.html" }}
+          {{ partial "sponsors.html" }}
+      
+        </div>
+      </div>
 
-        {{ partial "footer.html" . }}
+      {{ partial "footer.html" . }}
 
     </div>
     <!-- /#all -->

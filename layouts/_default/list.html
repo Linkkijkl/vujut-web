@@ -4,9 +4,13 @@
     {{ .Content }}
   </section>
   {{ range .Pages }}
-    <section>
-      <h2 id="{{ replace .LinkTitle " " "-" | strings.ToLower }}">{{ .Title }}</h2>
-      {{ .Content }}
+    <section id="{{ replace .LinkTitle " " "-" | strings.ToLower }}">
+      <div class="row justify-content-md-center">
+        <div class="col-md-8">
+          <h2>{{ .Title }}</h2>
+          {{ .Content }}
+        </div>
+      </div>
     </section>
   {{ end }}
 {{ end }}

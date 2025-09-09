@@ -15,7 +15,7 @@ for (const sponsor of document.querySelectorAll('.sponsors img')) {
             clearTimeout(debounceTimeout);
         }
         debounceTimeout = setTimeout(() => {
-            sponsors.masonry();
+            sponsors.layout();
         }, DEBOUNCE_TIME);
     }, {once: true});
 }

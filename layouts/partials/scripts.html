@@ -8,3 +8,12 @@
 
 <!-- Scripts -->
 <script src="{{ "js/main.js" | relURL }}"></script>
+<script src="{{ "js/shader.js" | relURL }}"></script>
+
+<!-- Page shaders -->
+{{ range .Page.Resources.Match "*.vert"}}
+<script src="{{ .RelPermalink }}" type="x-shader/x-vertex"></script>
+{{ end }}
+{{ range .Page.Resources.Match "*.frag"}}
+<script src="{{ .RelPermalink }}" type="x-shader/x-fragment"></script>
+{{ end }}

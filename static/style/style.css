@@ -24,6 +24,10 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+:root {
+    --primary-accent: #ff9500;
+}
+
 @font-face {
     font-family: "Libre Baskerville";
     src: url(typefaces/LibreBaskerville-Regular.ttf);
@@ -117,9 +121,19 @@ section {
 }
 
 .header {
-    padding-top: 100px;
+    background-color: #ff9500;
+    position: relative;
+    padding: 0;
     padding-bottom: 100px;
-    background-color: lightgrey;
+    padding-top: 100px;
+    z-index: -2;
+}
+
+#shader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 h1 {

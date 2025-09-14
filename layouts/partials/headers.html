@@ -2,7 +2,7 @@
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ $title_plain := site.Params.Title | markdownify | plainify }}
+{{ $title_plain := site.Title | markdownify | plainify }}
 <title>{{ $title_plain }}</title>
 <meta name="author" content="{{ .Param "author" }}" />
 {{ $keywords := .Site.Params.defaultKeywords | default (slice "" | first 0) }}

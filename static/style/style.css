@@ -24,10 +24,20 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/* Colour definitions */
 :root {
     --primary-accent: #ff9500;
+    --secondary-accent: #8117EB;
+    --primary-background: #FFF;
+    --secondary-background: #D8D8D8;
 }
 
+/* Scroll beyond navbar */
+:target {
+    scroll-margin-top: 30px;
+}
+
+/* Font settings */
 @font-face {
     font-family: "Libre Baskerville";
     src: url(typefaces/LibreBaskerville-Regular.ttf);
@@ -56,89 +66,21 @@ time, mark, audio, video {
     font-style: italic;
 }
 
-/* Footer placement, DO NOT ALTER */
-@media all {
-    html, body, #all {
-        min-height: 100vh !important;
-    }
-    #all {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-    footer {
-        margin-top: auto !important;
-    }
+body {
+    font-family: "Libre Baskerville";
+    font-weight: 400;
 }
 
-/* Footer layout */
-@media all {
-    footer {
-        border-top: 1px solid black;
-        display: block flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        height: 3rem;
-    }
+strong {
+    font-weight: 700;
 }
 
-/* Font settings */
-@media all {
-    html {
-        font-family: "Libre Baskerville";
-        font-weight: 400;
-    }
-
-    strong {
-        font-weight: 700;
-    }
-
-    i {
-        font-style: italic;
-    }
-}
-
-/* Sponsors */
-@media all {
-    .sponsors .masonry {
-        padding: 2%;
-
-        .grid-sizer, .sponsor {
-            width: 30%;
-        }
-        .gutter-sizer {
-            width: 3%;
-        }
-        .sponsor-image {
-            width: 100%;
-        }
-    }
-}
-
-section {
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.header {
-    background-color: #ff9500;
-    position: relative;
-    padding: 0;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    z-index: -2;
-}
-
-#shader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+i {
+    font-style: italic;
 }
 
 h1 {
-    font-size: 2em;
-    padding-bottom: 0.5em;
+    font-size: 4em;
 }
 
 h2 {
@@ -146,10 +88,68 @@ h2 {
     padding-bottom: 0.4em;
 }
 
-p {
+.content-block p {
     padding-bottom: 1.5em;
 }
 
-:target {
-    scroll-margin-top: 30px;
+/* Sponsor layout */
+.sponsors .masonry {
+    padding: 2%;
+
+    .grid-sizer, .sponsor {
+        width: 30%;
+    }
+    .gutter-sizer {
+        width: 3%;
+    }
+    .sponsor-image {
+        width: 100%;
+    }
+}
+
+/* Containers */
+body {
+    background-color: var(--primary-background);
+    min-height: 100vh !important;
+}
+
+.header {
+    background-color: var(--primary-accent);
+    position: relative;
+    padding: 0;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    z-index: -2;
+}
+
+.inner-header {
+    border-radius: 10px;
+    background-color: var(--secondary-background);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#shader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+.content-block {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.navbar {
+    background-color: var(--secondary-background);
+}
+
+.footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--secondary-background);
 }

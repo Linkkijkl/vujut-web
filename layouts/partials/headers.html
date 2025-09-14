@@ -21,7 +21,7 @@
 <link href="{{ $bootstrap.Permalink }}" rel="stylesheet">
 
 <!-- Stylesheet -->
-<link href="{{ "style/style.css" | relURL }}" rel="stylesheet">
+<link href="{{ "style/style.css" | relURL }}?t={{ hugo.BuildDate | htmlEscape }}" rel="stylesheet">
 
 <!-- Favicon and Apple touch icons-->
 <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}" type="image/x-icon" />

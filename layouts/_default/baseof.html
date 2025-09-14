@@ -15,20 +15,19 @@
 
       <div class="container-xl text-center">
 
-          {{ block "main" . }}
-            This will be replaced with content from the 
-            corresponding "define" action found in the template
-            to which this base template is applied.
-          {{ end }}
+        {{ block "main" . }}
+          This will be replaced with content from the 
+          corresponding "define" action found in the template
+          to which this base template is applied.
+        {{ end }}
 
-          {{ partial "sponsors.html" }}
-      
-        </div>
+        {{ partial "sponsors.html" }}
+
+        {{ partial "footer.html" }}
+        
       </div>
-
-      {{ partial "footer.html" . }}
-
     </div>
+
     <!-- /#all -->
 
     {{ partial "scripts.html" . }}

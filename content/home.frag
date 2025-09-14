@@ -9,7 +9,6 @@ precision highp float;
 
 uniform vec2 u_resolution;
 uniform float u_time;
-uniform float u_random;
 uniform vec3 u_background_color;
 
 out vec4 outColor;
@@ -23,6 +22,7 @@ struct surface {
 };
 
 const float EPSILON = 0.01;
+const float TIMESCALE = 0.2;
 vec3 cp;
 vec3 lp;
 vec2 uv;
@@ -117,8 +117,8 @@ vec3 repeat(vec3 p, vec3 c) {
 surface map(vec3 p) {
     p -= vec3(0.0, -0.4, 0.0);
     p.yz *= rotate(PI/16.0);
-    vec3 pt = repeat(p - vec3(-u_time/2.0, 0.0, 0.0), vec3(2.7, 0.0, 0.0));
-    vec3 pl = repeat(p - vec3(-u_time/2.0, 0.0, 7.0), vec3(8.0, 0.0, 0.0));
+    vec3 pt = repeat(p - vec3(-u_time * TIMESCALE, 0.0, 0.0), vec3(2.7, 0.0, 0.0));
+    vec3 pl = repeat(p - vec3(-u_time * TIMESCALE, 0.0, 7.0), vec3(8.0, 0.0, 0.0));
     float r = 0.9;
     float spec = 0.5;
     /*
@@ -173,7 +173,7 @@ When there's no hits, we do this. We could do something more fancy than
 returning a solid color...
 */
 vec3 nohit_col() {
-    return vec3(0.83137, 0.68627, 0.21568);
+    return u_background_color.rgb;
 }
 
 

@@ -35,7 +35,6 @@ const compileShader = (code, type) => {
 }
 
 
-
 const buildShaderProgram = (shaderInfo) => {
     const program = gl.createProgram();
 
@@ -84,8 +83,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     gl = canvas.getContext("webgl2");
     if (!gl) return;
 
-    const getShaderSource = url => fetch(url).then(response => response.text());
-
     const vertex = document.querySelector('script[type="x-shader/x-vertex"]');
     const fragment = document.querySelector('script[type="x-shader/x-fragment');
     if (!vertex || !fragment) return;
@@ -105,7 +102,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     resolutionLocation = gl.getUniformLocation(shaderProgram, "u_resolution");
     const timeLocation = gl.getUniformLocation(shaderProgram, "u_time");
     const backgroundLocation = gl.getUniformLocation(shaderProgram, "u_background_color");
-    const randomLocation = gl.getUniformLocation(shaderProgram, "u_random");
 
     const vao = gl.createVertexArray();
     gl.bindVertexArray(vao);
@@ -113,7 +109,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     // Create a buffer to put three 2d clip space points in
     const positionBuffer = gl.createBuffer();
 
-    // Bind it to ARRAY_BUFFER (think of it as ARRAY_BUFFER = positionBuffer)
+    // Bind it to ARRAY_BUFFER
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
 
     // fill it with a 2 triangles that cover clip space
@@ -144,7 +140,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     gl.uniform2f(resolutionLocation, gl.canvas.width, gl.canvas.height);
     const pa = getBackgroundColor();
     gl.uniform3f(backgroundLocation, pa[0] / 255.0, pa[1] / 255.0, pa[2] / 255.0);
-    gl.uniform1f(randomLocation, Math.random() * 1000.0);
 
     let timeTracker = 0.0;
     let startTime = document.timeline.currentTime;

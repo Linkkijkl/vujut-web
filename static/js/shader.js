@@ -87,6 +87,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     const fragment = document.querySelector('script[type="x-shader/x-fragment');
     if (!vertex || !fragment) return;
 
+    const getShaderSource = url => fetch(url).then(response => response.text());
+
     shaderProgram = buildShaderProgram([
         {
             type: gl.VERTEX_SHADER,

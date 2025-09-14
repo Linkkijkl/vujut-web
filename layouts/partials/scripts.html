@@ -7,8 +7,9 @@
 <script src="{{ $bootstrap.Permalink }}"></script>
 
 <!-- Scripts -->
-<script src="{{ "js/main.js" | relURL }}"></script>
-<script src="{{ "js/shader.js" | relURL }}"></script>
+{{ $buildID := hugo.BuildDate | htmlEscape }}
+<script src="{{ "js/main.js" | relURL }}?t={{ $buildID }}"></script>
+<script src="{{ "js/shader.js" | relURL }}?t={{ $buildID }}"></script>
 
 <!-- Page shaders -->
 {{ range .Page.Resources.Match "*.vert"}}

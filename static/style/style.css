@@ -34,11 +34,6 @@ time, mark, audio, video {
     --highlight-color: #ffb042;
 }
 
-/* Scroll beyond navbar */
-:target {
-    scroll-margin-top: 30px;
-}
-
 /* Font settings */
 @font-face {
     font-family: "Libre Baskerville";

@@ -9,9 +9,9 @@
 
     <div id="all">
 
-      {{ partial "nav.html" }}
+      {{ partial "nav.html" . }}
 
-      {{ partial "header.html" }}
+      {{ partial "header.html" . }}
 
       <div class="container-xl text-center">
 
@@ -21,9 +21,9 @@
           to which this base template is applied.
         {{ end }}
 
-        {{ partial "sponsors.html" }}
+        {{ partial "sponsors.html" . }}
 
-        {{ partial "footer.html" }}
+        {{ partial "footer.html" . }}
         
       </div>
     </div>

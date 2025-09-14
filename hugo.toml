@@ -1,6 +1,6 @@
 baseURL = 'https://dev-vujut.linkkijkl.fi'
 languageCode = 'fi-fi'
-title = 'Linkki Jyväskylä ry 20v vuosijuhlat'
+title = 'Linkin 20v vujut'
 defaultContentLanguage = 'fi'
 
 staticDir = ["static"]
@@ -13,3 +13,4 @@ disableKinds = ["taxonomy"]
     organizer = "Linkki Jyväskylä ry"
     organizer-url = "https://linkkijkl.fi"
     header-subtext = "20v vuosijuhlat 20.3.2026"
+    navbar-logo-location = "https://linkkijkl.fi/img/logo/linkki-navbar-dark.svg"

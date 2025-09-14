@@ -168,6 +168,8 @@ body {
 }
 
 .navbar {
+    padding: 0;
+
     background-color: var(--secondary-background);
     
     .navbar-nav {
@@ -177,6 +179,14 @@ body {
     .nav-link {
         color: var(--primary-accent);
         font-weight: bold;
+    }
+
+    .navbar-logo {
+        max-height: 60px;
+    }
+
+    .navbar-brand {
+        padding: 0;
     }
 }
 

@@ -26,12 +26,12 @@ time, mark, audio, video {
 
 /* Colour definitions */
 :root {
-    --primary-accent: #ff9500;
-    --secondary-accent: #975800;
-    --primary-background: #222;
+    --primary-accent: #eee;
+    --secondary-accent: #888;
+    --primary-background: #111;
     --secondary-background: #444;
     --text-color: #ccc;
-    --highlight-color: #ffb042;
+    --highlight-color: #fff;
 }
 
 /* Font settings */

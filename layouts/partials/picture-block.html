@@ -1,0 +1,7 @@
+<div class="row justify-content-md-center pictures">
+    {{ range .Param "pictures" }}
+            <div class="col-6">
+                <img src="{{ . }}" />
+            </div>
+    {{ end }}
+</div>

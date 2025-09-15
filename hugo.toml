@@ -12,5 +12,6 @@ disableKinds = ["taxonomy"]
     sponsors-id = "sponsorit"
     organizer = "Linkki Jyväskylä ry"
     organizer-url = "https://linkkijkl.fi"
+    header-background = "/img/Linkki_Jkl_18v_pääjuhla-122.jpg"
     header-subtext = "20v vuosijuhlat 20.3.2026"
     navbar-logo-location = "https://linkkijkl.fi/img/logo/linkki-navbar-dark.svg"

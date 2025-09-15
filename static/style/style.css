@@ -111,12 +111,12 @@ body {
 
 .header {
     background-color: var(--primary-accent);
-    position: relative;
+    background-size: cover;
+    background-position: center;
     padding: 0;
     padding-bottom: 150px;
     padding-top: 150px;
     margin-bottom: 2em;
-    z-index: -2;
 }
 
 .inner-header {
@@ -188,8 +188,17 @@ body {
 .footer {
     padding-top: 1em;
     padding-bottom: 1em;
+    position: relative;
     background-color: var(--secondary-background);
+}
 
+.inner-footer {
+    border-radius: 10px;
+    background-color: var(--secondary-background);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
     a {
         color: var(--primary-accent);
     }

@@ -23,6 +23,8 @@ struct surface {
 
 const float EPSILON = 0.01;
 const float TIMESCALE = 0.2;
+const float CAMERA_ANGLE = PI / 16.0 * 1.5;
+const vec3 PACMAN_COLOR = vec3(0.9);
 vec3 cp;
 vec3 lp;
 vec2 uv;
@@ -116,7 +118,7 @@ vec3 repeat(vec3 p, vec3 c) {
 
 surface map(vec3 p) {
     p -= vec3(0.0, -0.4, 0.0);
-    p.yz *= rotate(PI/16.0);
+    p.yz *= rotate(CAMERA_ANGLE);
     vec3 pt = repeat(p - vec3(-u_time * TIMESCALE, 0.0, 0.0), vec3(2.7, 0.0, 0.0));
     vec3 pl = repeat(p - vec3(-u_time * TIMESCALE, 0.0, 7.0), vec3(8.0, 0.0, 0.0));
     float r = 0.9;
@@ -127,7 +129,7 @@ surface map(vec3 p) {
     */
     float angle = 0.0;
     float skol = 0.0;
-    vec3 pacman_color = vec3(0.83137, 0.68627, 0.21568);
+    vec3 pacman_color = PACMAN_COLOR;
     // Room for improvement: bounding boxes/spheres for pacmen?
     return unionCSG(
         unionCSG(

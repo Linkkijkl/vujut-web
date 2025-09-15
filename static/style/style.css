@@ -204,7 +204,7 @@ body {
     }
 }
 
-.pictures img {
+.picture {
     width: 100%;
     object-fit: contain;
 }

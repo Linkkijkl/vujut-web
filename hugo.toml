@@ -1,17 +1,18 @@
 baseURL = 'https://dev-vujut.linkkijkl.fi'
 languageCode = 'fi-fi'
-title = 'Linkin 20v vujut'
+title = 'Linkki Jyväskylä ry | Vuosijuhlat'
 defaultContentLanguage = 'fi'
+copyright = '© Linkki Jyväskylä ry'
 
 staticDir = ["static"]
 
 disableKinds = ["taxonomy"]
 
 [params]
-    sponsors = "Yhteistyössä"
+    sponsors = "Yhteistyö"
     sponsors-id = "sponsorit"
     organizer = "Linkki Jyväskylä ry"
     organizer-url = "https://linkkijkl.fi"
-    header-background = "/img/Linkki_Jkl_18v_pääjuhla-122.jpg"
-    header-subtext = "20v vuosijuhlat 20.3.2026"
+    header-background = "/img/linkki-vuosijuhlat-header-img.jpg"
+    header-subtext = "20-vuotisvuosijuhlat 20.3.2026"
     navbar-logo-location = "/img/linkki-logo-simple.svg"

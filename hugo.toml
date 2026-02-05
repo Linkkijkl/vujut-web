@@ -9,10 +9,11 @@ staticDir = ["static"]
 disableKinds = ["taxonomy"]
 
 [params]
-    sponsors = "Yhteistyö"
+    sponsors = "Yhteistyössä"
     sponsors-id = "sponsorit"
     organizer = "Linkki Jyväskylä ry"
     organizer-url = "https://linkkijkl.fi"
     header-background = "/img/linkki-vuosijuhlat-header-img.jpg"
-    header-subtext = "20-vuotisvuosijuhlat 20.3.2026"
+    header-banner = "/img/vujut-web-banner.png"
+    header-subtext = "20 vuotta — 20.3.2026"
     navbar-logo-location = "/img/linkki-logo-simple.svg"

@@ -26,13 +26,14 @@ time, mark, audio, video {
 
 /* Colour definitions */
 :root {
-    --primary-accent: #eee;
+    --primary-accent: #c3bb83;
     --secondary-accent: #888;
-    --primary-background: #011f4b;
-    --secondary-background: #001636;
+    --primary-background: #0b0b0c;
+    --secondary-background: #0b0b0c;
 /*  --primary-background: #181818;
     --secondary-background: rgb(15, 15, 15); */
     --text-color: #ccc;
+    --title-color: #c3bb83;
     --highlight-color: #fff;
 }
 
@@ -66,6 +67,7 @@ time, mark, audio, video {
 }
 
 body {
+    background-color: var(--primary-background);
     font-family: "Libre Baskerville";
     font-weight: 400;
 }
@@ -103,6 +105,8 @@ hr {
 /* Sponsor layout */
 .sponsors .masonry {
     padding: 2%;
+    display: flex;
+    height: 100%;
 
     .grid-sizer, .sponsor {
         width: 30%;
@@ -111,42 +115,78 @@ hr {
         width: 3%;
     }
     .sponsor-image {
-        width: 100%;
         -webkit-user-drag: none;
         user-select: none;
         -moz-user-select: none;
         -webkit-user-select: none;
         -ms-user-select: none;
+
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        object-fit: contain;
     }
 }
 
 
 /* Containers */
 body {
-    background-color: var(--primary-background);
+      background-image: url("../img/web-background.png");
+      background-color: var(--primary-background);
+  background-repeat: repeat;
     min-height: 100vh !important;
 }
 
 .header {
-    background-color: var(--primary-background);
     background-size: cover;
     background-position: center;
     padding: 0;
-    padding-bottom: 150px;
-    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     margin-bottom: 2em;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-
 }
 
-.inner-header {
+.header-image {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.header-button {
     background-color: var(--primary-background);
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--primary-accent);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    margin: 20px;
+    color: var(--title-color);
+    letter-spacing: 1px;
+    transition: transform .4s;
+}
+
+.header-button:hover {
+    transform: scale(1.1);
+}
+
+.inner-header {
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    object-fit: fill;
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
 
     h1 {
         color: var(--highlight-color);
@@ -156,12 +196,12 @@ body {
     }
 }
 
+.inner-header-img {
+    object-fit: fill;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 
-.inner-header p {
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: var(--primary-accent);
-    text-align: center;
 }
 
 .inner-header p::first-letter {
@@ -193,7 +233,7 @@ body {
     }
 
     h2 {
-        color: var(--primary-accent);
+        color: var(--title-color);
         padding-bottom: 0.4em;
     }
 }
@@ -206,7 +246,19 @@ body {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
     .nav-link {
-        color: var(--primary-accent);
+        color: var(--title-color);
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    
+    .navbar-nav {
+        padding: 10px;
+
     }
 
     .navbar-logo {
@@ -218,7 +270,7 @@ body {
     }
 
     a {
-        color: var(--primary-accent);
+        color: var(--title-color);
         transition-property: color; 
         transition-duration: 1s; 
         transition-timing-function: ease; 
@@ -231,13 +283,14 @@ body {
 
 
 .footer {
+    background-color: var(--primary-background);
     padding-top: 1em;
     padding-bottom: 1em;
     position: relative;
-    background-color: var(--secondary-background);
     font-size: small;
 
-    a {
+    p {
+        text-align: center;
         color: var(--primary-accent);
         text-decoration: none;
     }

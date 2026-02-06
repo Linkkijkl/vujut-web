@@ -6,6 +6,7 @@ id = 'silliaamiainen'
     pictures = []
 +++
 
-Vuosijuhlista palautuminen tapahtuu perinteisellä silliksellä **lauantaina 21.3.2026** Juhlatalo Majakoskella.
+Vuosijuhlista palautuminen tapahtuu perinteisellä silliksellä **lauantaina 21.3.2026**
+[Juhlatalo Majakoskella](https://maps.app.goo.gl/5pkWGfJAnDjkA8pp9).
 
 ---

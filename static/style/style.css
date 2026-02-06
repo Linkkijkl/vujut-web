@@ -24,7 +24,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* Colour definitions */
+/* Color definitions */
 :root {
     --primary-accent: #c3bb83;
     --secondary-accent: #888;
@@ -35,6 +35,15 @@ time, mark, audio, video {
     --text-color: #ccc;
     --title-color: #c3bb83;
     --highlight-color: #fff;
+
+    /* Bootrstap overrides */
+    --bs-link-color: var(--primary-accent);
+    --bs-emphasis-color-rgb: var(--primary-accent);
+    --bs-navbar-brand-color-rgb: var(--primary-accent);
+    --bs-navbar-color: var(--primary-accent);
+
+    --bs-nav-link-hover-color: var(--secondary-accent);
+    --bs-link-hover-color: var(--secondary-accent);
 }
 
 /* Font settings */
@@ -100,6 +109,17 @@ p {
 
 hr {
     color: var(--text-color);
+}
+
+a {
+    color: var(--primary-accent);
+    transition-property: color; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out; 
+}
+
+a:hover {
+    color: var(--secondary-accent);
 }
 
 /* Sponsor layout */
@@ -223,14 +243,6 @@ body {
         padding-bottom: 1.5em;
     }
 
-    a:visited {
-        color: var(--secondary-accent);
-    }
-
-    a {
-        color: var(--primary-accent);
-    }
-
     h2 {
         color: var(--title-color);
         padding-bottom: 0.4em;
@@ -244,16 +256,11 @@ body {
     letter-spacing: 2px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 
-    .nav-link {
-        color: var(--title-color);
-    }
-
     .navbar-toggler {
         position: absolute;
         padding: 2px;
         margin: 2px;
     }
-
     
     .navbar-nav {
         padding: 10px;
@@ -269,10 +276,10 @@ body {
     }
 
     a {
-        color: var(--title-color);
+        color: var(--primary-accent);
         transition-property: color; 
-        transition-duration: 1s; 
-        transition-timing-function: ease; 
+        transition-duration: 0.3s; 
+        transition-timing-function: ease-out; 
     }
 
     a:hover {

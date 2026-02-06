@@ -15,7 +15,7 @@ for (const collaborator of document.querySelectorAll('.collaborators img')) {
             clearTimeout(debounceTimeout);
         }
         debounceTimeout = setTimeout(() => {
-            collaborator.layout();
+            collaborators.layout();
         }, DEBOUNCE_TIME);
     }, {once: true});
 }

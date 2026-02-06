@@ -1,0 +1,22 @@
+{{ if isset site.Data "collaborators" }}
+{{ if gt (len site.Data.collaborators) 0 }}
+<section id="{{ site.Param "collaborators-id" }}">
+  <div class="row justify-content-md-center">
+    <div class="col-md-8 collaborators content-block">
+      <h2>{{ site.Param "collaborators" | title }}</h2>
+      <div class="masonry">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        {{ range sort site.Data.collaborators "name" "asc" }}
+          <div class="collaborator">
+            <a href="{{ .url }}" target="_blank">
+              <img src="{{ .image }}" alt="{{ .name }}" class="collaborator-image" />
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

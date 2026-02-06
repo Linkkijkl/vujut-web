@@ -9,8 +9,8 @@ staticDir = ["static"]
 disableKinds = ["taxonomy"]
 
 [params]
-    sponsors = "Yhteistyössä"
-    sponsors-id = "sponsorit"
+    collaborators = "Yhteistyössä"
+    collaborators-id = "yhteistyössä"
     organizer = "Linkki Jyväskylä ry"
     organizer-url = "https://linkkijkl.fi"
     header-background = "/img/linkki-vuosijuhlat-header-img.jpg"

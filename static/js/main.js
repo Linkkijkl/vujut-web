@@ -1,21 +1,21 @@
-// Sponsor layout
-let sponsors = new Masonry( ".sponsors .masonry", {
+// Collaborator layout
+let collaborators = new Masonry( ".collaborators .masonry", {
     columnWidth: ".grid-sizer",
     gutter: ".gutter-sizer",
-    itemSelector: ".sponsor",
+    itemSelector: ".collaborator",
     percentPosition: true,
 });
 
 // Reload masonry after images load fully
 let debounceTimeout = null;
 const DEBOUNCE_TIME = 200;
-for (const sponsor of document.querySelectorAll('.sponsors img')) {
-    sponsor.addEventListener('load', () => {
+for (const collaborator of document.querySelectorAll('.collaborators img')) {
+    collaborator.addEventListener('load', () => {
         if (debounceTimeout) {
             clearTimeout(debounceTimeout);
         }
         debounceTimeout = setTimeout(() => {
-            sponsors.layout();
+            collaborator.layout();
         }, DEBOUNCE_TIME);
     }, {once: true});
 }

@@ -122,19 +122,19 @@ a:hover {
     color: var(--secondary-accent);
 }
 
-/* Sponsor layout */
-.sponsors .masonry {
+/* Collaborator layout */
+.collaborators .masonry {
     padding: 2%;
     display: flex;
     height: 100%;
 
-    .grid-sizer, .sponsor {
+    .grid-sizer, .collaborator {
         width: 30%;
     }
     .gutter-sizer {
         width: 3%;
     }
-    .sponsor-image {
+    .collaborator-image {
         -webkit-user-drag: none;
         user-select: none;
         -moz-user-select: none;

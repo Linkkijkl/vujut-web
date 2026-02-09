@@ -129,10 +129,10 @@ a:hover {
     height: 100%;
 
     .grid-sizer, .collaborator {
-        width: 30%;
+        width: 42%;
     }
     .gutter-sizer {
-        width: 3%;
+        width: 14%;
     }
     .collaborator-image {
         -webkit-user-drag: none;
@@ -145,6 +145,7 @@ a:hover {
         width: 100%;
         max-width: 100%;
         object-fit: contain;
+        padding-bottom: 3em;
     }
 }
 

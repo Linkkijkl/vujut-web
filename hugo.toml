@@ -17,3 +17,5 @@ disableKinds = ["taxonomy"]
     header-banner = "/img/vujut-web-banner.png"
     header-subtext = "20 vuotta — 20.3.2026"
     navbar-logo-location = "/img/linkki-logo-simple.svg"
+    sales-button = "Lipunmyynti aukeaa 23.2."
+    sales-link = ""

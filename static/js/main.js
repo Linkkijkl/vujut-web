@@ -29,3 +29,13 @@ window.addEventListener('load', () => {
     // Set scroll offset
     document.styleSheets[0].insertRule(`:target { scroll-margin-top: ${bottomLocation}px; }`);
 });
+
+// Set ticket sales button behaviour
+window.addEventListener('load', () => {
+    document.querySelector('#sales-button')?.addEventListener('click', (e) => {
+        const location = e.target.getAttribute('data-href');
+        if (location != '') {
+            window.open(location);
+        }
+    });
+})

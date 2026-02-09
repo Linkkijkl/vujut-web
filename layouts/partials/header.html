@@ -3,6 +3,8 @@
     <div class="inner-header-img">
       <img class="header-image" draggable="false" src="img/vujut-web-banner.png"></img>
     </div>
-    <button class="header-button">Lipunmyynti</button>
+    {{ if isset site.Params "sales-button" }}
+    <button id="sales-button" class="header-button" data-href="{{ site.Param "sales-link" }}">{{ site.Param "sales-button"}}</button>
+    {{ end }}
   </div>
 </header>

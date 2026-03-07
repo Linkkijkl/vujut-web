@@ -101,6 +101,17 @@ h2 {
     letter-spacing: 2px;
 }
 
+h3 {
+    color: var(--text-color);
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
 p {
     color: var(--text-color);
     line-height: 30px;
@@ -212,7 +223,7 @@ body {
         color: var(--highlight-color);
         line-height: 1.5;
         letter-spacing: 2px;
-        font-size: clamp(16px, calc(20px + (36–20) * (100vw - 768px)/(1920–768)), 48px);
+        font-size: clamp(16px, calc(20px + (36-20) * (100vw - 768px)/(1920-768)), 48px);
     }
 }
 
@@ -321,4 +332,22 @@ body {
 .picture {
     width: 100%;
     object-fit: contain;
+}
+
+#menu {
+    h2 {
+        padding-bottom: 1.5em;
+    }
+
+    h3 {
+        padding: 1em 0em;
+    }
+
+    h4 {
+        padding: 0.2em 0em;
+    }
+
+    p {
+        text-align: center;
+    }
 }

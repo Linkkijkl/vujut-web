@@ -6,36 +6,40 @@ id = 'menu'
     pictures = []
 +++
 
-### Alkuruoka
+### **Alkuruoka**
 
 #### Liha
 
-**Hiillostettu nieriätartar**, luomu kananmunaa ja tryffelikastiketta (L)
+**Hiillostettu nieriätartar**  
+luomu kananmunaa ja tryffelikastiketta (L)
 
 #### Kasvis
 
-**Kuohkeaa mustatorvisienikeittoa** ja hillottua omenaa (V,G)
+**Kuohkeaa mustatorvisienikeittoa**  
+ja hillottua omenaa (V,G)
 
-### Pääruoka
+### **Pääruoka**
 
 #### Liha
 
-**Paahdettua häränfileetä**, puikulaperunakroketti ja mustatorvisienikastiketta (L)
+**Paahdettua häränfileetä**  
+puikulaperunakroketti ja mustatorvisienikastiketta (L)
 
 #### Kasvis
 
-**Portobellosieni-confit**, chimichurri-tofua, mehustettua punajuurta ja belugalinssejä (V,G)
+**Portobellosieni-confit**  
+chimichurri-tofua, mehustettua punajuurta ja belugalinssejä (V,G)
 
-### Jälkiruoka
+### **Jälkiruoka**
 
 #### Liha
 
-**Kuusenkerkkä vanukasta**, hillottua mustikkaa ja kuivattua suklaamoussea (L)
+**Kuusenkerkkävanukasta**  
+hillottua mustikkaa ja kuivattua suklaamoussea (L)
 
 #### Kasvis
 
-**Kuusenkerkkävanukasta**, hillottua mustikkaa ja pähkinäkakkua (V)
-
-
+**Kuusenkerkkävanukasta**  
+hillottua mustikkaa ja pähkinäkakkua (V)
 
 ---

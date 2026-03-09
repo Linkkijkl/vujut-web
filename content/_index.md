@@ -9,6 +9,6 @@ Tietotekniikan, tietojenkäsittelytieteen ja koulutusteknologian pääaine-, siv
 
 Vuosijuhlille ovat tervetulleita kutsuvieraat, Linkki Jyväskylä ry:n jäsenet ja alumnit seuralaisineen. Avecien tulee ostaa itselleen oma sopiva lippu.
 
-Ilta alkaa cocktailtilaisuudella [Valtiontalon juhlasalissa Kulttuurisuojassa](https://maps.app.goo.gl/numkKfeUgLYnpVDE9) **klo 16.00**, jonka jälkeen jatkamme iltajuhlan merkeissä **klo 18:00** alkaen. Illan päätteeksi juhlat jatkuvat [Club Escapessa](https://maps.app.goo.gl/tPGE85Bqfbnfwm4r7) **klo 23:00**. 
+Ilta alkaa cocktailtilaisuudella [Valtiontalon juhlasalissa Kulttuurisuojassa](https://maps.app.goo.gl/numkKfeUgLYnpVDE9) **klo 16.00**, jonka jälkeen jatkamme iltajuhlan merkeissä **klo 18:00** alkaen. Illan päätteeksi juhlat jatkuvat Jyväskylän yöelämässä **klo 23:00**. 
 
 ---

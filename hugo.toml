@@ -17,5 +17,5 @@ disableKinds = ["taxonomy"]
     header-banner = "/img/vujut-web-banner.png"
     header-subtext = "20 vuotta — 20.3.2026"
     navbar-logo-location = "/img/linkki-logo-simple.svg"
-    sales-button = "Lipunmyyntiin"
-    sales-link = "https://kide.app/events/b4e03f42-dcc6-4d08-be5f-9fff2482259e"
+    sales-button = "Kiitos juhlista!"
+#    sales-link = "https://kide.app/events/b4e03f42-dcc6-4d08-be5f-9fff2482259e"
